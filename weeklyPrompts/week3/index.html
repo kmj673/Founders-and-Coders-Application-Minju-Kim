@@ -1,18 +1,45 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <h1>week 3 DOM</h1>
-    <h2>a Codename validator detective.</h2>
-    <label for="string">Check this string</label>
+    <h2>Codename validator detective</h2>
+    <label class="padding-margin" for="codename">Type your codename.</label>
     <br />
-    <input id="string" type="text" name="string" />
-    <br />
-    <button type="button" id="checkButton">check!</button>
-    <p id="output">output will be here</p>
+    <ul>
+      <li>
+        Include both UPPER and lower case.
+        <span id="caseValidator">// case validator</span>
+      </li>
 
+      <li>
+        Include at least one number.
+        <span id="numberValidator">// number validator</span>
+      </li>
+
+      <li>
+        Not shorter than 5 letters.
+        <span id="lengthValidator">// length validator</span>
+      </li>
+    </ul>
+    <input
+      class="padding-margin"
+      id="codename"
+      type="text"
+      name="codename"
+      placeholder="Minju123"
+    />
+    <span class="letterCount">// letter counts</span>
+    <br />
+    <button class="padding-margin" type="button" id="checkButton">
+      check!
+    </button>
+    <br />
+    <p id="output">result: pass or fail</p>
+
+    <script src="validator.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
