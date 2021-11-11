@@ -4,9 +4,28 @@ body {
   margin: 0;
   padding: 0;
 }
-h1,button,span{
-  margin: 10px;
+
+h1,input,label{
+  margin: 15px;
 }
-input,label{
-  margin: 10px;
+.container{
+  background-color: bisque;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
 }
+button{
+  padding: 25px;
+  border-radius: 10px;
+  color: orange;
+  background-color: grey;
+  font-size: 30px;
+  font-weight: bold;
+}
+.output{
+  /* font-weight: 800; */
+  font-size: 30px;
+}
+

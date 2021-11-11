@@ -1,34 +1,40 @@
-
 <html>
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-  <h1>Week 4: Array Methods</h1>
-  <p>123,456,789,456,456</p>
-  <label for="string">String</label>
-  <input type="text" name="string" placeholder=" 12, 345, 6789,..." id="input"/>
-  <br />
-  <input type="radio" name="f1" id="f1" />
-  <label for="f1">function 1</label>
-  <br />
-  <input type="radio" name="f2" id="f2" />
-  <label for="f2">function 2</label>
-  <br />
-  <input type="radio" name="f3" id="f3" />
-  <label for="f3">function 3</label>
-  <br />
-  <input type="radio" name="f4" id="f4" />
-  <label for="f4">function 4</label>
-  <br />
-  <input type="radio" name="f5" id="f5" />
-  <label for="f5">function 5</label>
-  <br />
-  <button type="button">Click!</button>
-  <br />
-  <span id="output">output</span>
-  
-  <script src="script.js"></script>
-</body>
+    <h1>Week 4: Array Methods</h1>
+    <label for="string">String</label>
+    <input
+      type="text"
+      name="string"
+      placeholder=" 12, 345, 6789,..."
+      id="input"
+    />
+    <br />
+    <input type="radio" name="function" id="f1" value="f1" />
+    <label for="f1">function 1: doubled every element</label>
+    <br />
+    <input type="radio" name="function" id="f2" value="f2" />
+    <label for="f2">function 2: total of Array</label>
+    <br />
+    <input type="radio" name="function" id="f3" value="f3" />
+    <label for="f3">function 3: elements is divisible by 2</label>
+    <br />
+    <input type="radio" name="function" id="f4" value="f4" />
+    <label for="f4">function 4: elements multiply with its index</label>
+    <br />
+
+    <div class="container">
+      <div>
+        <span class="output" id="functionOutput">function</span>
+        <br />
+        <span class="output" id="resultOutput">result</span>
+      </div>
+      <button type="submit">Click!</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
