@@ -13,65 +13,123 @@
     />
   </head>
   <body>
+    <!-- navigation part -->
     <div class="navigation">
-      <span class="menu" id="menu1">Project Gallery</span>
-      <div class="projects">
-        <span class="menu" id="menu2">Project 1</span>
-        <span class="menu" id="menu3">Project 2</span>
-        <span class="menu" id="menu4">Project 3</span>
-        <span class="menu" id="menu5">Project 4</span>
+      <span class="menu" id="menu1"><a href="#">Project Gallery</a></span>
+      <div class="project-menu">
+        <span class="menu" id="menu2"><a href="#first">Who am I?</a></span>
+        <span class="menu" id="menu3"><a href="#second">Projects</a></span>
       </div>
       <div class="contacts-links">
-        <span class="menu" id="menu6">Contacts</span>
-        <span class="menu" id="menu7">Links</span>
+        <span class="menu" id="menu4"><a href="#third">Contacts</a></span>
       </div>
     </div>
+    <!-- contents part  -->
     <div class="parent">
+      <!-- intro part -->
       <div class="container" id="first">
+        <h1 class="introduction-h1">Who am I?</h1>   
         <div class="element">
-          <img src="minju.png" alt="Minju Kim" class="ellipse" />
-        </div>
-        <div class="element">
-          <h1>Who am I?</h1>
-          <p>
-            Hi, this is Minju Kim, web developer. <br />
-            Originally from South Korea and living in <br />
-            London at this moment.<br />
-            This is my project gallery website to present<br />
-            my recent projects. I designed this website with figma, and<br />
-            developed with vscode.<br />
-            Also in this website, you can contact me by<br />
-            sending me email. <br />
-            Or you can visit the link of my social media.<br />
-            https://bit.ly/30iZDcA
+          <img src="picture/minju.png" alt="Minju Kim" id="minju-img" />
+          <p id="introduction">
+              Hi, this is Minju Kim. <br />
+              Originally from South Korea and living in London at this moment.<br />
+              This is my project gallery website to present my recent projects. <br />
+              I designed this website with <a href="https://bit.ly/30iZDcA">figma</a>, and developed with vscode.<br />
+              Also in this website, you can contact me by sending me email. <br />
+              Or you can visit the link of my social media and github.<br />
           </p>
-        </div>
+        </div>       
       </div>
+      <!-- projects  -->
       <div class="container" id="second">
-        <div class="element">
-          <h1>Project1</h1>
+      
+        <div class="slide">
+        <span class="left">&lt;</span>
+        <span class="right">&gt;</span>
+        <!-- slide 1 -->
+        <div class="page">
+          <h1 class="slide-h1">Tribute Page</h1>
+          <div class="slide-panel">
+            <img src="picture/tribute.png" id="tribute-img" alt="tribute page" >
+            <div class="explanation">
+              <a href="https://codepen.io/mjkmj/full/eYRVPrz">
+                <h2>Tribute Page</h2>
+              </a>
+              <p>this will be explanation.</p>
+            </div>
+          </div>
         </div>
-        <div class="element">
-          <h1>Project2</h1>
+        
+          
+        <!-- slide 2 -->
+        <div class="page">
+          <h1 class="slide-h1">JS Calculator</h1>
+          <div class="slide-panel">
+            <img src="picture/tribute.png" id="tribute-img" alt="JS Calculator" >
+            <div class="explanation">
+              <a href="https://codepen.io/mjkmj/full/eYRVPrz">
+                <h2>JS Calculator</h2>
+              </a>
+              <p>this will be explanation.</p>
+            </div>
+          </div>
+        </div>
+        <!-- slide 3 -->
+        <div class="page">
+          <h1 class="slide-h1">Codename Validator</h1>
+          <div class="slide-panel">
+            <img src="picture/tribute.png" id="tribute-img" alt="Codename Validator" >
+            <div class="explanation">
+              <a href="https://codepen.io/mjkmj/full/eYRVPrz">
+                <h2>Codename Validator</h2>
+              </a>
+              <p>this will be explanation.</p>
+            </div>
+          </div>
+        </div>
+        <!-- slide 4 -->
+        <div class="page">
+          <h1 class="slide-h1">JS Chrome App</h1>
+          <div class="slide-panel">
+            <img src="picture/tribute.png" id="tribute-img" alt="JS Chrome App" >
+            <div class="explanation">
+              <a href="https://codepen.io/mjkmj/full/eYRVPrz">
+                <h2>JS Chrome App</h2>
+              </a>
+              <p>this will be explanation.</p>
+            </div>
+          </div>
+        </div>
+        
         </div>
       </div>
+      </div>
+      <!-- contacts  -->
       <div class="container" id="third">
-        <div class="element">
-          <h1>Project3</h1>
-        </div>
-        <div class="element">
-          <h1>Project4</h1>
-        </div>
+        <h1>Contacts</h1>
+        <form action="">
+          <label for="email">Email : </label>
+            <input type="email" name="email" id="email">
+          <br>
+          <label for="subject">Subject : </label>
+          <input type="text" name="subject" id="subject">
+          <br>
+          <label for="message">Message</label>
+          <br>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <br>
+          <button type="submit">Submit</button>
+        </form>
       </div>
-      <div class="container" id="fourth">
-        <div class="element">
-          <h1>Contacts</h1>
-        </div>
-        <div class="element">
-          <h1>Links</h1>
-        </div>
-      </div>
-      <footer>this is all right reserved to minju kim.</footer>
+    </div>
+    <footer>
+      <span>Minju Kim made this website.</span>
+      <a href="https://www.linkedin.com/in/minju-kim-minju/" ><img src="picture/linkedin.png" alt="linkedin" class="icon"></a>
+      <a href="https://www.youtube.com/channel/UCw7evTSpBnFfrZPOOz4DRLA" ><img src="picture/youtube.png" alt="youtube" class="icon"></a>
+      <a href="https://twitter.com/mjkm_j" ><img src="picture/twitter.png" alt="twitter" class="icon"></a>
+      <a href="https://github.com/kmj673" ><img src="picture/github.png" alt="github" class="icon"></a>
+    </footer>
     </div>
   </body>
 </html>

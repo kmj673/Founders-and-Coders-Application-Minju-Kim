@@ -2,68 +2,131 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-body {
-  background-color: orange;
   font-family: "Nunito", sans-serif;
 }
-.navigation {
+a {
+  text-decoration: none;
+  color: #000;
+}
+.navigation,
+footer {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height: 2rem;
+  height: 5rem;
+  background-color: orange;
 }
+.menu {
+  /* border: 2px solid #afbcde; */
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+#menu1 {
+  font-weight: 900;
+  font-size: 2rem;
+}
+.project-menu {
+  /* border: 2px solid #afbcde; */
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .parent {
   display: flex;
   flex-flow: column wrap;
 }
-
 .container {
-  display: flex;
-  height: 100vh;
-}
-#first {
-  height: 97vh;
-}
-#fourth {
-  height: 97vh;
-}
-footer {
-  height: 2rem;
-}
-.element {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  height: 100vh;
+  /* border-bottom: 3px solid red; */
 }
-@media (max-width: 800px) {
-  .container {
-    flex-flow: column wrap;
-    height: 100vh;
-  }
-  .element {
-    height: 50vh;
-    width: 100%;
-  }
+.element {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  /* border: 5px solid black; */
+  width: 100%;
 }
 
-#first {
-  background-color: khaki;
+#minju-img {
+  width: 30rem;
+  margin: 5rem 15rem 5rem 0rem;
+}
+#introduction {
+  font-size: 1.5rem;
 }
 #second {
-  background-color: lavender;
-}
-#third {
-  background-color: lightpink;
-}
-#fourth {
-  background-color: lightyellow;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
 }
 
-.ellipse {
-  width: 30rem;
-  height: 30rem;
+.slide {
+  /* border: 5px solid black; */
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.slide > span {
+  position: absolute;
+  font-size: 5rem;
+}
+.slide > span:hover {
+  background-color: #a1a1a1;
+  color: #ffffff;
+}
+.left {
+  left: 0%;
+}
+.right {
+  right: 0%;
+}
+
+.slide-h1 {
+  text-align: center;
+}
+.page {
+  width: 100vw;
+  background-color: #abcfed;
+}
+.slide-panel {
+  /* width: 100%; */
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#tribute-img {
+  /* border: 5px solid #cbadef; */
+  width: 70%;
+}
+.explanation {
+  /* border: 5px solid #cbadef; */
+  width: 30%;
+  height: 100%;
+  background-color: #c4c4c4;
+}
+
+footer {
+  justify-content: center;
+  align-items: center;
+}
+footer > span {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 1rem;
 }
