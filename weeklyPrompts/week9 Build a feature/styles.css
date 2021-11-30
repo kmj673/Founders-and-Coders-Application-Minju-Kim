@@ -17,6 +17,7 @@
   height: 10%;
   font-size: 3rem;
   font-weight: 700;
+  z-index: 900;
 }
 .slide-container {
   border: 5px solid orange;
@@ -46,7 +47,23 @@
   width: 100%;
   height: 100%;
   white-space: normal;
-  margin-right: 1rem;
+  font-size: 10rem;
+  padding: 45%;
+}
+#slide1 {
+  background-color: red;
+}
+#slide2 {
+  background-color: greenyellow;
+}
+#slide3 {
+  background-color: olive;
+}
+#slide4 {
+  background-color: aqua;
+}
+#slide5 {
+  background-color: firebrick;
 }
 /* .active:hover {
   text-align: center;
@@ -66,4 +83,11 @@
   height: 1.5rem;
   width: 20%;
   border-radius: 1rem;
+}
+
+.toNext {
+  transform: translate(-100%);
+}
+.toPrev {
+  transform: translate(100%);
 }
